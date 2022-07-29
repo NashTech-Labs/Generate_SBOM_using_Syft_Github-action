@@ -10,7 +10,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Package Frontend
+    - name: SBOM Generation using Syft
       run: |
         docker build -t test-image .
     - uses: anchore/sbom-action@v0
